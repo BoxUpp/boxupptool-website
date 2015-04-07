@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pitfallsincurring</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google-site-verification" content="klW6D5jFlDinQ63ADHr2fPsuJp96XdAi2QI_Gv2h52o" />
+        <meta name="description" content="The real challenge of today’s project development life-cycle lies in shipping of the project builds from development environments to production.">
+        <meta name="keywords" content=""> 
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+
+
+
+    <body>	
+    	<!-- Main -->
+	<div id="main">
+		<!-- Header -->
+
+<div id="header" class="skel-layers-fixed">
+  <div class="top"> 
+    <!-- Logo -->
+    <div id="logo"> <span class="image"><a href="index.html"><img src="images/logo.png" alt="" /></a></span> 
+      <!--<h1 id="title">Jane Doe</h1>
+      <p>Hyperspace Engineer</p>--> 
+    </div>
+    
+    <!-- Nav -->
+    <nav id="nav"> 
+      <!--Prologue's nav expects links in one of two formats:
+		1. Hash link (scrolls to a different section within the page)
+			<li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+        2. Standard link (sends the user to another page/site)
+			<li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+			--> 
+            <ul>
+      
+    	<li>
+        	<a href="#top" id="top-link" class="skel-layers-ignoreHref "><span class="fa fa-home"></span>Home</a>
+        </li>
+	
+    	<li>
+        	<a href="#technologies" id="technologies-link" class="skel-layers-ignoreHref "><span class="fa fa-cogs"></span>Technologies</a>
+        </li>
+	
+    	<li>
+        	<a href="#downloads" id="downloads-link" class="skel-layers-ignoreHref "><span class="fa fa-download"></span>Downloads</a>
+        </li>
+	
+    	<li>
+        	<a href="#overview" id="Overview-link" class="skel-layers-ignoreHref "><span class="fa fa-eye"></span>Overview</a>
+        </li>
+	
+    	<li>
+        	<a href="#why" id="why-link" class="skel-layers-ignoreHref "><span class="fa fa-question-circle"></span>Why Boxupp</a>
+        </li>
+	
+    	<li>
+        	<a href="#features" id="features-link" class="skel-layers-ignoreHref "><span class="fa fa-umbrella"></span>Features</a>
+        </li>
+	
+    	<li>
+        	<a href="#started" id="started-link" class="skel-layers-ignoreHref "><span class="fa fa-clock-o"></span>Get Started</a>
+        </li>
+	
+    	<li>
+        	<a href="#developers" id="developers-link" class="skel-layers-ignoreHref "><span class="fa fa-code"></span>Developers</a>
+        </li>
+	
+    	<li>
+        	<a href="#blog" id="blog-link" class="skel-layers-ignoreHref "><span class="fa fa-picture-o"></span>Blog</a>
+        </li>
+	
+    	<li>
+        	<a href="/case-studies.html" id="top-link" class="skel-layers-ignoreHref "><span class="fa fa-book"></span>Case Studies</a>
+        </li>
+	
+    
+    
+    
+      </ul>
+      
+      <!--
+      
+      <ul>
+        <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="fa fa-picture-o"></span> Intro</a></li>
+        <li><a href="#technologies" id="technologies-link" class="skel-layers-ignoreHref"><span class="fa  fa-cogs"></span> Technologies</a></li>
+        <li><a href="#downloads" id="downloads-link" class="skel-layers-ignoreHref"><span class="fa  fa-download"></span> Download</a></li>
+        <li><a href="#overview" id="overview-link" class="skel-layers-ignoreHref"><span class="fa  fa-eye"></span> Overview</a></li>
+        <li><a href="#blog" id="blog-link" class="skel-layers-ignoreHref"><span class="fa  fa-rss"></span> Blog</a></li>
+        <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="fa   fa-caret-down"></span> Developers</a>
+        	
+            <ul>
+            	<li><a href="https://github.com/boxupp" id="foobar-link" ><span class="fa  fa-github-square"></span> Github</a></li>
+                <li><a href="https://forge.puppetlabs.com/modules?utf-8=%E2%9C%93&amp;sort=rank&amp;q=Boxupp" id="foobar-link"><span class="fa fa-flask"></span>Puppet Forge</a></li>
+                <li><a href="online-linter.html" id="foobar-link"><span class="fa fa-bar-chart"></span>Puppet Linter</a></li>
+                <li><a href="report-an-issue.html" id="foobar-link"><span class="fa  fa-wrench"></span>Report An Issue</a></li>
+                
+            </ul>
+        
+        </li>
+        
+        <li><a href="case-studies.html" id="casestudies-link"><span class="fa  fa-book"></span>Case Studies</a></li>
+        
+       
+      </ul> -->
+      
+      
+    </nav>
+  </div>
+  <div class="bottom"> 
+    
+    <!-- Social Icons -->
+    <ul class="icons">
+      <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+      <li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+      <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+      <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+  </div>
+</div>
+
+		 		
+		<!-- Contact -->
+<section id="contact" class="four">
+  <div class="container">
+    <header>
+      <h2>Subscribe to our mailing list</h2>
+    </header>
+    <p>Elementum sem parturient nulla quam placerat viverra 
+      mauris non cum elit tempus ullamcorper dolor. </p>
+    <form method="post" action="#">
+      <div class="row 50%">
+        <div class="8u">
+          <input type="email" name="name" placeholder="Enter email id here" />
+        </div>
+        <div class="4u">
+          <input type="submit" value="Send Message" />
+        </div>
+      </div>
+      
+    </form>
+  </div>
+</section>
+	
+		
+	</div>
+    </div>
+<!-- Footer -->
+<div id="footer">   
+  <!-- Copyright -->
+  <ul class="copyright">
+    <li>Copyright &copy; 2013-2015 Paxcel Technologies (p) Ltd</li>
+    <li>Product of Paxcel Labs</li>
+  </ul>
+</div>
+
+	
+	</body>
+</html>

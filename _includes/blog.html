@@ -1,0 +1,35 @@
+<!-- overview -->
+<section id="blog" class="two">
+  <div class="container">
+    <header>
+      <h2> Latest <strong>Blog</strong> Posts</h2>
+    </header>
+   
+    <div class="row">
+		
+		{% for post in site.posts %}
+		<div class="4u">
+			<a href="{{ post.post-url }}" target="_blank">  
+				<article class="latest-blog margin-bottom">
+				  <div class="row">
+					<div class="3u">
+					  <div class="date"> {{ post.post-date }}
+						<div class="clearfix">{{ post.post-year }}</div>
+					  </div>
+					</div>
+                <div class="9u">{{ post.post-heading }}</div>
+					</div>
+              <p>{{  post.description }}</p>
+              <div class="name">Posted by <strong>{{ post.post-by }}</strong></div>
+              <i class="arrow-bottom" ></i> 
+				</article> 
+			</a>
+        </div>
+	 
+	 
+	 {% endfor %}
+		
+           
+          </div>
+  </div>
+ </section>
