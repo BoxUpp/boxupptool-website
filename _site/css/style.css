@@ -552,3 +552,234 @@ input[type="reset"],
   padding: 10px;
   font-size: 11px;
   color: #FFF; }
+
+/*********************************************************************************/
+/* News Ticker                                                                          */
+/*********************************************************************************/
+/* nt-title */
+#nt-title {
+  margin-top: 60px;
+  padding-left: 0px; }
+  #nt-title li {
+    white-space: nowrap;
+    list-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300; }
+
+/*********************************************************************************/
+/* Get Started                                                                  */
+/*********************************************************************************/
+.get-started {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ededed;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: pointer; }
+  .get-started .icon {
+    display: block;
+    float: left;
+    height: 145px;
+    margin: 0 0 10px;
+    position: relative;
+    width: 100%; }
+    .get-started .icon:before {
+      border: 1px solid;
+      bottom: 0;
+      content: "";
+      height: 100px;
+      left: 0;
+      margin: 15px auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      width: 100px; }
+    .get-started .icon span {
+      bottom: 0;
+      left: 0;
+      line-height: 134px;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      vertical-align: middle;
+      color: #405069;
+      font-size: 64px; }
+  .get-started h3 {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
+  .get-started:hover {
+    background: #f3f8fd;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    color: #f7941f h3;
+      color-color: #f7941f;
+      color--webkit-transition: all 1s ease-out;
+      color--moz-transition: all 1s ease-out;
+      color--o-transition: all 1s ease-out;
+      color--ms-transition: all 1s ease-out;
+      color-transition: all 1s ease-out; }
+
+.bulid-link {
+  border: 0 none;
+  display: block;
+  line-height: 0; }
+
+/*********************************************************************************/
+/* Steps                                                                        */
+/*********************************************************************************/
+.step {
+  position: relative;
+  margin: 50px 0px; }
+
+.step:before {
+  background: #cdcdcd;
+  content: " ";
+  width: 70%;
+  height: 4px;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 120px; }
+
+.steps {
+  border: 2px solid #cdcdcd;
+  border-radius: 50%;
+  width: 144px;
+  height: 144px;
+  color: #f7941f;
+  font-size: 64px;
+  text-align: center;
+  line-height: 2.2em;
+  background: #fff;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: pointer;
+  margin: 0px auto;
+  position: relative;
+  z-index: 10; }
+
+/*.steps.second {
+	margin: 0px auto
+}*/
+.steps.second:after, .steps.first:after {
+  background: url(/images/arrow-steps.png) no-repeat;
+  content: "";
+  height: 22px;
+  left: 215px;
+  position: absolute;
+  top: 42%;
+  width: 26px; }
+
+/*.steps.third {
+	float: right
+}*/
+.step a:hover .steps {
+  background: #2098d1;
+  color: #fff;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.step .sub-heading {
+  color: #000000;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: pointer; }
+
+.step a:hover .sub-heading {
+  color: #2098d1;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: pointer; }
+
+/*********************************************************************************/
+/* technologies                                                                        */
+/*********************************************************************************/
+.technologies {
+  /*background-color: #f7f7f7;
+  padding:4px 0px;	*/
+  text-align: left;
+  margin-top: 40px;
+  border: 1px solid #e1e1e1; }
+
+.technologies h6 {
+  padding: 10px; }
+
+.technologies .left-side {
+  background-color: #f7f7f7;
+  border-right: 1px solid #e1e1e1;
+  float: left; }
+
+.technologies h6 span {
+  font-weight: 400; }
+
+.technologiesLogo {
+  max-width: 100%;
+  margin: auto;
+  text-align: left; }
+
+.technologiesLogo ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: left; }
+
+.technologiesLogo ul li {
+  margin: 0px;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  padding: 4px 20px  3px;
+  font-size: 22px;
+  color: #999999;
+  border-right: 1px solid #e1e1e1;
+  height: 54px; }
+
+.technologiesLogo ul li a {
+  color: #999999;
+  font-weight: 700;
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+  border: none; }
+
+.technologiesLogo ul li a i {
+  font-size: 35px;
+  float: left; }
+
+.technologiesLogo ul li a:hover {
+  opacity: 0.8; }
