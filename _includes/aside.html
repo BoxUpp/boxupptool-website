@@ -16,15 +16,23 @@
         2. Standard link (sends the user to another page/site)
 			<li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 			--> 
-            <ul>
-      {% for n in site.nav %}
-    	<li>
-        	<a href="{{ n.permalink }}" id="{{ n.id }}" class="skel-layers-ignoreHref "><span class="fa {{ n.icon }}"></span>{{ n.page }}</a>
-        </li>
-	{% endfor %}
-    
-    
-    
+      <ul>
+      	{% for node in site.nav %}
+    		<li>
+        		<a href="{% if page.title != "Home"  %} 
+                		
+                        {% if node.linktype == 1 %}
+                        	index.html{{ node.permalink }}
+                        	{% else %} {{ node.permalink }}
+                        {% endif %}
+                     {% else %}   
+                     {{ node.permalink }}
+                  {% endif %}
+                
+                
+                 " id="{{ node.id }}" class="skel-layers-ignoreHref"><span class="fa {{ node.icon }}"></span>{{ node.page }}</a>
+        	</li>
+		{% endfor %}
       </ul>
       
       <!--

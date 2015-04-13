@@ -14,36 +14,42 @@ nav:
   id: top-link
   icon: fa-home
   linktype: 1
+  title: Home
   
 - page: Why Boxupp
   permalink: "#why"
   id: why-link
   icon: fa-question-circle
   linktype: 1
+  title: Home
   
 - page: Features
   permalink: "#overview"
   id: overview-link
   icon: fa-umbrella
   linktype: 1
+  title: Home
   
 - page: Get Started
   permalink: "#started"
   id: started-link
   icon: fa-clock-o
   linktype: 1
+  title: Home
   
 - page: Developers
   permalink: "#developers"
   id: developers-link
   icon:  fa-code
   linktype: 1
+  title: Home
  
 - page: Blog
   permalink: "#blog"
   id: blog-link
   icon: fa-picture-o
   linktype: 1
+  title: Home
   
 - page: Case Studies
   permalink: case-studies.html
