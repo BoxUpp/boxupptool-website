@@ -18,10 +18,8 @@
 			--> 
       <ul>
       	{% for node in site.nav %}
-    		<li>
-        		<a href="{% if page.title != "Home" %}{% if node.linktype == 1 %}index.html{{ node.permalink }}{% else %}{{ node.permalink }}{% endif %}{% else %}{{ node.permalink }}{% endif %}" class="{% if node.permalink == page.url  %}active{% endif %}" id="{{ node.id }}" ><span class="fa {{ node.icon }}"></span>{{ node.page }}</a>
-        	</li>
-		{% endfor %}
+    		<li><a href="{% if page.title != "Home" %}{% if node.linktype == 1 %}index.html{{ node.permalink }}{% else %}{{ node.permalink }}{% endif %}{% else %}{{ node.permalink }}{% endif %}" class="{% if node.permalink == page.url  %}active{% endif %}" id="{{ node.id }}" ><span class="fa {{ node.icon }}"></span>{{ node.page }}</a></li>
+        {% endfor %}
       </ul>
       
       <!--

@@ -52,7 +52,7 @@ nav:
   title: Home
   
 - page: Case Studies
-  permalink: "/case-studies.html"
+  permalink: '/case-studies.html'
   id: top-link
   icon:  fa-book
   linktype: 0
