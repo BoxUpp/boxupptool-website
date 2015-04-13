@@ -71,7 +71,7 @@ a {
   transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   outline: 0; }
   a:hover {
-    color: #E27689;
+    color: #f7941f;
     border-bottom-color: rgba(255, 255, 255, 0); }
 
 sub {
@@ -449,7 +449,8 @@ input[type="reset"],
         color: #fff;
         border-color: inherit; }
       #main > section.dark a:hover {
-        border-bottom-color: rgba(255, 255, 255, 0); }
+        border-bottom-color: rgba(255, 255, 255, 0);
+        color: #f7941f; }
     #main > section.cover {
       padding: 6em 0;
       background-size: cover;
@@ -506,52 +507,31 @@ input[type="reset"],
 /*********************************************************************************/
 /* Blog                                                                          */
 /*********************************************************************************/
-.blog-section {
-  height: 100%;
-  padding: 100px 0;
-  text-align: center;
-  background: #fff; }
-  .blog-section h2 {
-    font-family: 'open_sansregular';
-    font-weight: 400;
-    font-size: 50px;
-    color: #404040;
-    margin: 0 0 50px 0;
-    padding: 0;
-    text-align: center; }
-    .blog-section h2 span {
-      font-family: 'open_sanslight'; }
-
 .latest-blog {
-  border: solid 1px #dcd8d8;
-  border-radius: 7px;
-  font-size: 16px;
-  text-align: left;
-  padding: 10px;
-  background-color: #f8f7f7; }
-  .latest-blog:hover {
-    background-color: #f8f7f7;
-    text-decoration: none; }
-    .latest-blog:hover .name {
-      color: #f99b16; }
-    .latest-blog:hover p {
-      background-color: #f8f7f7; }
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
   .latest-blog p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
     font-size: 16px;
-    font-style: italic;
-    color: #999;
-    padding: 20px 0;
-    line-height: 25px;
-    border-bottom: solid 4px #dcd8d8; }
-
-.date {
-  background-color: #179fda;
-  text-align: center;
-  padding: 10px;
-  font-size: 11px;
-  color: #FFF; }
+    line-height: 1.4em;
+    margin: 0 0 3px;
+    padding: 0; }
+  .latest-blog .date {
+    color: #666;
+    font-size: 13px; }
+    .latest-blog .date i {
+      font-size: 14px; }
+    .latest-blog .date strong {
+      font-weight: 600; }
+  .latest-blog a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0084b4;
+    border: none; }
+    .latest-blog a:hover {
+      color: #f7941f; }
+  .latest-blog .post-desc {
+    color: #999; }
 
 /*********************************************************************************/
 /* News Ticker                                                                          */

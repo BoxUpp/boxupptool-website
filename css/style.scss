@@ -114,7 +114,7 @@
 		
 		&:hover
 		{
-			color: #E27689;
+			color: #f7941f;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 	}
@@ -682,6 +682,7 @@
 				a:hover
 					{
 						border-bottom-color: rgba(255,255,255,0);
+						color:#f7941f;
 					}
 			}
 			
@@ -749,57 +750,39 @@
 /*********************************************************************************/
 /* Blog                                                                          */
 /*********************************************************************************/
-.blog-section {
-	height: 100%;
-	padding: 100px 0;
-	text-align: center;
-	background: #fff;
-	
-	h2 {
-	 font-family: 'open_sansregular';
-	font-weight: 400;
-	font-size: 50px;
-	color: #404040;
-	margin: 0 0 50px 0;
-	padding: 0;
-	text-align: center;
-	span {
-	font-family: 'open_sanslight';
-		}
-	}
-}
-
 .latest-blog {
-	border: solid 1px #dcd8d8;
-	border-radius: 7px;
-	font-size: 16px;
-	text-align: left;
-	padding: 10px;
-	background-color:#f8f7f7;
-	&:hover{ background-color:#f8f7f7; text-decoration:none;
-		.name{ color:#f99b16; }
-		p{ background-color:#f8f7f7;}
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	
+	 p {
+	  font-size: 16px;
+	  line-height: 1.4em;
+	  margin: 0 0 3px;
+	  padding: 0;
 	}
 	
-	p {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	font-style: italic;
-	color: #999;
-	padding: 20px 0;
-	line-height: 25px;
-	border-bottom: solid 4px #dcd8d8;
-}
+	.date {
+		color: #666;
+		font-size: 13px;		
+		i {
+			font-size: 14px;
+		}
+		strong{font-weight:600}
+	}
+	a {
+		font-size: 16px;
+		font-weight:400;
+		color:#0084b4;
+		border:none;
+		&:hover{color:#f7941f}
+	}
+	.post-desc {
+		color: #999
+	}
 }
 
-.date {
-	background-color: #179fda;
-	text-align: center;
-	padding: 10px;
-	font-size: 11px;
-	color: #FFF;
-}
+
 /*********************************************************************************/
 /* News Ticker                                                                          */
 /*********************************************************************************/
