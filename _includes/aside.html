@@ -19,18 +19,7 @@
       <ul>
       	{% for node in site.nav %}
     		<li>
-        		<a href="{% if page.title != "Home"  %} 
-                		
-                        {% if node.linktype == 1 %}
-                        	index.html{{ node.permalink }}
-                        	{% else %} {{ node.permalink }}
-                        {% endif %}
-                     {% else %}   
-                     {{ node.permalink }}
-                  {% endif %}
-                
-                
-                 " id="{{ node.id }}" class="skel-layers-ignoreHref"><span class="fa {{ node.icon }}"></span>{{ node.page }}</a>
+        		<a href="{% if page.title != "Home" %}{% if node.linktype == 1 %}index.html{{ node.permalink }}{% else %}{{ node.permalink }}{% endif %}{% else %}{{ node.permalink }}{% endif %}" id="{{ node.id }}" ><span class="fa {{ node.icon }}"></span>{{ node.page }}</a>
         	</li>
 		{% endfor %}
       </ul>
