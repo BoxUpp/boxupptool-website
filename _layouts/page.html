@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-    <body>	
-    	<!-- Main -->
-	<div id="main">
-		{% include aside.html %}
-		 {{ content }}		
-		{% include contact.html %}	
-		
-	</div>
-    {% include footer.html %}	
-	</body>
+{% include head.html %}
+<body data-spy="scroll" data-target="#nav">
+<div id="wrapper"> 
+	{% include aside.html %} 
+  	<!-- Page Content -->
+  	<div id="page-content-wrapper">
+    	<div class="container-fluid pad0">
+        	 {{ content }}	
+			{% include contact.html %}
+            {% include footer.html %}
+            
+            
+    	</div>
+  	</div>
+  <!-- /#page-content-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+{% include js.html %}
+</body>
 </html>

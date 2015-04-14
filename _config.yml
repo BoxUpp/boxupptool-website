@@ -11,7 +11,7 @@ scss:
 nav:
 - page: Home
   permalink: "#top"
-  id: top-link
+  id: top
   icon: fa-home
   linktype: 1
   title: Home

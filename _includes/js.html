@@ -1,3 +1,46 @@
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+	
+	/*$(function () {
+	$("#page-content-wrapper").scroll(function() {  
+		alert("done");
+		var scroll = $(window).scrollTop();
+    	if (scroll <= 500) {
+        	$(".clearheader").removeClass("clearHeader").addClass("darkHeader");
+    	}
+	});
+	});*/
+	
+	/*$(window).scroll(function() {
+   var hT = $('#page-content-wrapper').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       alert('you have scrolled to the h1!');
+   }
+});*/
+	
+	
+	var innerheight = $(window).innerHeight();
+	
+	$("#top").css('height',innerheight);
+	
+	
+    </script>
+<script src="js/jquery.ticker.js" type="text/javascript"></script>
+<script src="js/jquery.newsTicker.js"></script>
+
 <script> var nt_title = $('#nt-title').newsTicker({
                 row_height: 40,
                 max_rows: 1,

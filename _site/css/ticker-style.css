@@ -27,6 +27,7 @@
 	text-transform: uppercase;
 	/*border-right:1px solid #898989;*/
 	position:relative;
+	color:#fff;
 }
 .ticker-title:after{
 	content: '\f0da'; 
