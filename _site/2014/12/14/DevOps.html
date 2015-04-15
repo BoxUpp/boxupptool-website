@@ -84,10 +84,10 @@
       mauris non cum elit tempus ullamcorper dolor. </p>
     <form method="post" action="#">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-8">
           <input type="email" name="name" placeholder="Enter email id here" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
           <input type="submit" value="Send Message" />
         </div>
       </div>
@@ -124,35 +124,54 @@
 
     <!-- Menu Toggle Script -->
     <script>
+	var innerheight = $(window).innerHeight();
+	
+	
+	
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
 	
-	/*$(function () {
-	$("#page-content-wrapper").scroll(function() {  
-		alert("done");
-		var scroll = $(window).scrollTop();
-    	if (scroll <= 500) {
-        	$(".clearheader").removeClass("clearHeader").addClass("darkHeader");
-    	}
-	});
-	});*/
+	if ($(window).width() >= 650 && $(window).width() <= 768 )
+		{
+			
+			$("#wrapper").addClass('toggled');
+			
+			$("#page-content-wrapper").click(function () {
+				$("#wrapper").addClass('toggled');
+			})
+		}
+		
+		else if ($(window).width() <= 649){
+			$("#wrapper").removeClass('toggled');
+			
+			$("#page-content-wrapper").click(function () {
+				$("#wrapper").removeClass('toggled');
+			})
+			
+			
+			}
+
+		 $('#page-content-wrapper').onmousewheel = function() {
+			//console.log("scrolling");
+			alert("Hello");
+		  };
+		function toggleside() {
+			alert("Hello");
+		}
+		
+if ($(window).width() > 768 ){$("#top").css('height',innerheight);}		
+
+
+$(".readmore").on("click",function(){
 	
-	/*$(window).scroll(function() {
-   var hT = $('#page-content-wrapper').offset().top,
-       hH = $('#scroll-to').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       alert('you have scrolled to the h1!');
-   }
-});*/
+	$(".show-contnet").addClass("show-contnet-show");
+	$(".readmore").css("display","none");
+	
+})
 	
 	
-	var innerheight = $(window).innerHeight();
-	
-	$("#top").css('height',innerheight);
 	
 	
     </script>
