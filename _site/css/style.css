@@ -3,6 +3,7 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+/********************************* Vender Prefix *********************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -40,16 +41,16 @@ table {
   box-sizing: border-box; }
 
 body.is-loading * {
-  -moz-transition: none !important;
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-  -moz-animation: none !important;
-  -webkit-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important; }
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none; }
 
 body, input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
@@ -96,10 +97,10 @@ em, i {
 a {
   text-decoration: none;
   color: #0a4264;
-  -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-  -o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   outline: 0; }
   a:hover {
@@ -176,11 +177,16 @@ section {
         display: inline-block; }
         #sidebar-wrapper .bottom .icons li a {
           color: #41484c;
-          -moz-transition: color 0.35s ease-in-out;
           -webkit-transition: color 0.35s ease-in-out;
-          -o-transition: color 0.35s ease-in-out;
+          -moz-transition: color 0.35s ease-in-out;
           -ms-transition: color 0.35s ease-in-out;
+          -o-transition: color 0.35s ease-in-out;
           transition: color 0.35s ease-in-out;
+          -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+          -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+          -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+          -o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+          transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
           display: inline-block;
           width: 2em;
           height: 2em;
@@ -206,10 +212,10 @@ section {
       text-decoration: none;
       outline: 0;
       border: 0;
-      -moz-transition: none;
       -webkit-transition: none;
-      -o-transition: none;
+      -moz-transition: none;
       -ms-transition: none;
+      -o-transition: none;
       transition: none;
       font-size: 0.8em; }
       #nav ul li a span {
@@ -221,9 +227,7 @@ section {
           position: absolute;
           left: 0;
           color: #41484c;
-          text-align: center;
-          /*width: 1.25em;
-          */ }
+          text-align: center; }
       #nav ul li a:hover {
         background: rgba(0, 0, 0, 0.15);
         box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
@@ -275,10 +279,10 @@ input[type="reset"],
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
   background-image: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
-  -moz-transition: background-color 0.35s ease-in-out;
   -webkit-transition: background-color 0.35s ease-in-out;
-  -o-transition: background-color 0.35s ease-in-out;
+  -moz-transition: background-color 0.35s ease-in-out;
   -ms-transition: background-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out;
   transition: background-color 0.35s ease-in-out; }
   input[type="button"]:hover,
   input[type="submit"]:hover,
@@ -323,8 +327,8 @@ input[type="reset"],
   position: relative;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
   cursor: pointer; }
   .get-started .icon {
@@ -345,11 +349,11 @@ input[type="reset"],
       right: 0;
       text-align: center;
       top: 0;
-      transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
+      transform: rotate(45deg);
       width: 100px; }
     .get-started .icon span {
       bottom: 0;
@@ -365,23 +369,23 @@ input[type="reset"],
   .get-started h3 {
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out; }
   .get-started:hover {
     background: #f3f8fd;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     color: #f7941f; }
     .get-started:hover h3 {
       color: #f7941f;
       -webkit-transition: all 1s ease-out;
       -moz-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
       -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
       transition: all 1s ease-out; }
 
 .bulid-link {
@@ -406,9 +410,10 @@ input[type="reset"],
     left: 120px; }
   .step .sub-heading {
     color: #000000;
+    -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     cursor: pointer; }
   .step a:hover .steps {
@@ -416,14 +421,15 @@ input[type="reset"],
     color: #fff;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out; }
   .step a:hover .sub-heading {
     color: #2098d1;
+    -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     cursor: pointer; }
 
@@ -439,8 +445,8 @@ input[type="reset"],
   background: #fff;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
   cursor: pointer;
   margin: 0px auto;
@@ -570,17 +576,19 @@ input[type="reset"],
 .show-contnet {
   max-height: 330px;
   overflow-y: hidden;
+  -webkit-transition: all 4s ease-out;
   -moz-transition: all 4s ease-out;
+  -ms-transition: all 4s ease-out;
   -o-transition: all 4s ease-out;
-  -ms-transition: all 1s ease-out;
   transition: all 4s ease-out; }
 
 .show-contnet-show {
   max-height: 100%;
   /* Set our transitions up. */
+  -webkit-transition: all 4s ease-out;
   -moz-transition: all 4s ease-out;
-  -o-transition: all 4s ease-out;
   -ms-transition: all 4s ease-out;
+  -o-transition: all 4s ease-out;
   transition: all 4s ease-out; }
 
 /************ Modal  class  ***************/
@@ -651,10 +659,10 @@ form input[type="text"], form input[type="email"], form input[type="password"], 
   padding: 0.75em 1em 0.75em 1em;
   box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
   border: solid 1px rgba(0, 0, 0, 0.15);
-  -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
   -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out; }
 form input[type="text"], form input[type="email"], form input[type="password"], form select {
   line-height: 1.25em; }
