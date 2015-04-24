@@ -454,7 +454,7 @@ input[type="reset"],
   z-index: 10; }
 
 .steps.second:after, .steps.first:after {
-  background: url(/images/arrow-steps.png) no-repeat;
+  background: url(../images/arrow-steps.png) no-repeat;
   content: "";
   height: 22px;
   left: 215px;
