@@ -61,7 +61,7 @@ body.is-loading * {
 }
 body, input, textarea, select {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: 300;
 	line-height: 1.75em;
 	color: #888;
@@ -856,6 +856,48 @@ section
 				height: 2em;				
 			}
 		}
+/*********************************************************************************/
+/* FAQ/Support                                                                   */
+/*********************************************************************************/
+
+/************ Accordian Panel  ***************/
+.panel-group .panel {
+	border-radius: 0px;
+}
+.panel-default > .panel-heading {
+	background: transparent;
+	border: 0px;
+	border-bottom: 1px dashed #b2b3b4;
+	border-radius: 0px;
+}
+.panel-heading .accordion-toggle h5 {
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333
+}
+.panel-heading .accordion-toggle h5:after {
+	/* symbol for "opening" panels */
+	font-family: 'FontAwesome';
+	content: "\f056";
+	float: right;
+	color: #f99b16;
+	overflow: no-display;
+}
+.panel-heading .accordion-toggle.collapsed h5:after {
+	/* symbol for "collapsed" panels */
+	content: "\f055";
+	color: #337ab7;
+}
+a.accordion-toggle {
+	text-decoration: none;
+}
+.panel-body {
+	color: #484848
+}
+.support .panel {/*width:46%; float:left; margin:0px 2% !important;*/
+	border: 0px
+}
+
 
 /******************************************************************************************
 					MEDIA QUERY LAYOUT STRUCTURE
