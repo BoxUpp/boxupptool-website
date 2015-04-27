@@ -22,7 +22,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<link rel="stylesheet" href="css/ticker-style.css" />
 <link rel="stylesheet" href="css/style.css " />
 </head>
 
@@ -64,7 +63,7 @@
     <ul class="icons">
       <li><a href="http://twitter.com/Boxupp" class="fa fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
       <li><a href="http://facebook.com/Boxupp" class="fa fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
-      <li><a href="https://www.youtube.com/channel/UC4sDBtPgaQZQT3hjiTLSsnA" class="fa fa-youtube" title="Youtube"><span class="label">Youtube</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=WnV_xkFBQ24" class="fa fa-youtube" title="Youtube"><span class="label">Youtube</span></a></li>
       <li><a href="https://www.linkedin.com/company/3768272?trk=tyah&trkInfo=tarId%3A1403083871999%2Ctas%3Aboxupp%2Cidx%3A1-1-1" class="fa fa-linkedin" title="Linkedin"><span class="label" >Linkedin</span></a></li>
       <li><a href="https://github.com/BoxUpp/boxupp" class="fa fa-github" title="Github"><span class="label">Github</span></a></li>
       <li><a href="mailto:info@boxupp.com" class="fa fa-envelope" title="Email"><span class="label">Email</span></a></li>
@@ -106,7 +105,7 @@
       <div class="col-lg-7 col-md-7 col-sm-8 text-left">
         <p>Our motivation to develop this tool is to provide an unified interface to the developers to efficiently manage their development environments and focus on coding instead of putting infrastructures in place. Therefore, we have brought together tools like Vagrant, Puppet and Docker under one roof. Initially we started with VirtualBox for creating and provisioning infrastructure locally and are now focussing on supporting other platforms like Amazon Cloud and Google Compute.</p>
       </div>
-      <div class="col-lg-5 col-md-5 col-sm-4"> <img src="images/steps.gif" alt="Boxupp-steps" class="img-responsive"> </div>
+      <div class="col-lg-5 col-md-5 col-sm-4"> <img src="images/steps.gif" alt="Boxupp-steps" class="img-responsive center-feature"> </div>
    
   </div>
 </section>
@@ -117,27 +116,191 @@
   <header>
     <h2>Lets Take A Quick <strong>Overview</strong></h2>
   </header>
-  <div class="row">
-    <div class="col-md-6 col-sm-6">
-      <article class="item"> <a href="#"><img src="images/Create-Workspace-img.png" alt="" class="img-responsive" /></a>
-        <header>
-          <h3>Create And Manage Multiple Workspaces </h3>
-        </header>
-      </article>
-    </div>
-    <div class="col-md-6 col-sm-6">
-      <article class="item"> <a href="#" class="image fit"><img src="images/Create-Workspace-img.png" class="img-responsive" alt="" /></a>
-        <header>
-          <h3>Create And Manage Multiple Workspaces </h3>
-        </header>
-      </article>
-    </div>
-    <div class="col-md-8 col-sm-6 text-left">
-      <h3>Create And Manage Multiple Workspaces </h3>
-      <p>Super easy to create workspaces using providers viz. Docker and Virtualbox Navigate effortlessly from one workspace to other, Define Boxes, Modules, Scripts etc within in your workspaces and much more. <strong> <a href="#"  data-toggle="modal" data-target=".request-demo">To know More Book a Live Demo > </a> </strong></p>
-    </div>
-    <div class="col-md-4 col-sm-6"> <a href="#" class="image fit"><img src="images/Create-Workspace.png" alt="" /></a> </div>
-  </div>
+  <div class="row workspaces" >
+          <div class="col-md-8 col-sm-6 text-left">
+            <h3>Inbuilt Vagrant Intelligence</h3>
+            <p>You do not need to learn Vagrant syntax. Boxupp knows what vagrant commands to run, how to achieve to bring your dashboard box states in sync with the real infrastructure at the backend. Enjoy vagrant features and Boxupp will take care of rest ! <br>
+              <strong> <a href="#"  data-toggle="modal" data-target=".request-demo">To know More Book a Live Demo > </a> </strong> 
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 center-feature">
+            <div class="tool-image  pull-right"  data-toggle="modal" data-target=".myModal"> 
+            	<img src="images/inbuiltvagran.png" class="DisplayNone img-responsive" alt="Creation of Workspaces"/>
+              <div class="zoom displayNone"   ><i class="fa fa-search" ></i> </div>
+            </div>
+          </div>
+          <div class="modal modalStyle fade myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-PopStyle" >
+              <div class="modal-content"  >
+                <button class="close model-btn-close" aria-hidden="true" data-dismiss="modal" type="button"><i class="fa  fa-times-circle"></i> </button>
+                <img src="images/inbuiltvagran-img.png" alt="Create Workspace" class=" img-responsive"/> </div>
+            </div>
+          </div>
+          <div  class="modal fade request-demo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-Style ">
+              <div class="modal-content  ">
+                <div class="modal-header " id="validator">
+                  <button type="button" class="close model-btn-close " data-dismiss="modal" aria-hidden="true"><i class="fa  fa-times-circle"></i> </button>
+                  <p class="text-left">Please Fill The Form Below<!-- And Our Support Staff Will Get Back To You Within 24hrs-->.</p>
+                </div>
+                <div class="modal-body" >
+                  <div class="form-group">
+                    <input type="Name" class="form-control" id="userName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <input type="skype " class="form-control" id="userSkypeId" placeholder="Skype Id">
+                  </div>
+                  <div class="form-group">
+                    <input type="Phone Number" class="form-control" id="userPhoneNumber" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group">
+                    <label class="pull-left">Preferred Time to Contact in GMT</label>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <select class="selectMenuStyle"  id="preferredTime1">
+                          <option>00:00 Hrs </option>
+                          <option>01:00 Hrs </option>
+                          <option>02:00 Hrs </option>
+                          <option>03:00 Hrs </option>
+                          <option>04:00 Hrs </option>
+                          <option>05:00 Hrs </option>
+                          <option>06:00 Hrs </option>
+                          <option>07:00 Hrs </option>
+                          <option>08:00 Hrs </option>
+                          <option>09:00 Hrs </option>
+                          <option>10:00 Hrs </option>
+                          <option>11:00 Hrs </option>
+                          <option>12:00 Hrs </option>
+                          <option>13:00 Hrs </option>
+                          <option>14:00 Hrs </option>
+                          <option>15:00 Hrs </option>
+                          <option>16:00 Hrs </option>
+                          <option>17:00 Hrs </option>
+                          <option>18:00 Hrs </option>
+                          <option>19:00 Hrs </option>
+                          <option>20:00 Hrs </option>
+                          <option>21:00 Hrs </option>
+                          <option>22:00 Hrs </option>
+                          <option>23:00 Hrs </option>
+                          <option>24:00 Hrs </option>
+                        </select>
+                      </div>
+                      <div class="col-xs-6">
+                        <select class="selectMenuStyle" id="preferredTime2">
+                          <option>01:00 Hrs </option>
+                          <option>02:00 Hrs </option>
+                          <option>03:00 Hrs </option>
+                          <option>04:00 Hrs </option>
+                          <option>05:00 Hrs </option>
+                          <option>06:00 Hrs </option>
+                          <option>07:00 Hrs </option>
+                          <option>08:00 Hrs </option>
+                          <option>09:00 Hrs </option>
+                          <option>10:00 Hrs </option>
+                          <option>11:00 Hrs </option>
+                          <option>12:00 Hrs </option>
+                          <option>13:00 Hrs </option>
+                          <option>14:00 Hrs </option>
+                          <option>15:00 Hrs </option>
+                          <option>16:00 Hrs </option>
+                          <option>17:00 Hrs </option>
+                          <option>18:00 Hrs </option>
+                          <option>19:00 Hrs </option>
+                          <option>20:00 Hrs </option>
+                          <option>21:00 Hrs </option>
+                          <option>22:00 Hrs </option>
+                          <option>23:00 Hrs </option>
+                          <option>24:00 Hrs </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group  text-center" >
+                    <button type="button" class="btn btn-success Validate-btn " onclick="requestForDemo();" >Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="row gitShare" >
+          <div class="col-lg-4 col-md-5  col-sm-6 order2">
+            <div class="tool-image"  data-toggle="modal" data-target=".myModal1"> 
+            	<img src="images/Search-module.png" class="DisplayNone" alt="Boxupp Provision - VMs and LXC with Puppet" />
+              	<div class="zoom displayNone"><i class="fa fa-search" ></i> </div>
+            </div>
+          </div>
+          <div class="modal modalStyle  fade myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-PopStyle">
+              <div class="modal-content">
+                <button class="close model-btn-close" aria-hidden="true" data-dismiss="modal" type="button">
+                	<i class="fa  fa-times-circle"></i> </button>
+                <img src="images/Search-module-img.png" alt="git share" class=" img-responsive"/> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-6 order1">
+            <h3>Puppet Forge Integration</h3>
+            <p>Boxupp supports around 2.8k+ modules from Puppet Forge. You can search and download a required module from the Puppet Forge repository and link it with any of the boxes defined in your Boxupp Dashboard. <br>
+              <a href="#"><strong>Download and Take a Ride ></strong></a> 
+            </p>
+          </div>
+        </div>
+        
+        
+        <div class="row outPutConsole" >
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h3>Manage multiple workspaces in your browser</h3>
+            <p>Super easy to create workspaces using providers viz. Docker and VirtualBox. Navigate effortlessly from one workspace to the other. Define boxes, modules, scripts within your workspaces and much more. <br>
+              <a href="#"><strong>Download and Explore Yourself ></strong></a> 
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6 center-feature">
+            <div class="tool-image pull-right " data-toggle="modal" data-target=".myModal2">
+            	<img src="images/Create-Workspace.png"  class="DisplayNone"  alt=" Output Console"/>
+              <div class="zoom displayNone"><i class="fa fa-search" ></i> </div>
+            </div>
+          </div>
+          <div class="modal modalStyle fade myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-PopStyle" >
+              <div class="modal-content"  >
+                <button class="close model-btn-close" aria-hidden="true" data-dismiss="modal" type="button">
+                	<i class="fa  fa-times-circle"></i> </button>
+                <img src="images/Create-Workspace-img.png" alt="git share" class=" img-responsive"/> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="row provisioning" >
+          <div class="col-lg-4 col-md-5 col-sm-6 order2">
+            <div class="tool-image" data-toggle="modal" data-target=".myModal3"> 
+            	<img src="images/git.png" class="DisplayNone"   alt="Shell Provisioner"/>
+              	<div class="zoom displayNone"><i class="fa fa-search" ></i> </div>
+            </div>
+          </div>
+          <div class="modal modalStyle fade myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-PopStyle">
+              <div class="modal-content"  >
+                <button class="close model-btn-close" aria-hidden="true" data-dismiss="modal" type="button"><i class="fa  fa-times-circle"></i> </button>
+                <img src="images/git-share.png" alt="git share" class=" img-responsive"/> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-6 order1">
+            <h3>Share your virtual environments over github</h3>
+            <p>Share your infrastructure as code on Github from within your Boxupp's control panel. This will help you collaborate, get feedback, get contributions from your team members or peer groups which will help in seamless development across teams.<br>
+              <a href="#"><strong>Download and Play Around ></strong></a> 
+            </p>
+          </div>
+        </div>
+  
 </section>
 
         	<!-- downloads -->
@@ -149,25 +312,25 @@
     </header>
     <div class="row">
       <div class="col-md-3 col-sm-3">
-        <div class="get-started animation fadeInleft"> <a href="https://github.com/BoxUpp/boxupp/releases" target="_blank">
+        <div class="get-started"> <a href="https://github.com/BoxUpp/boxupp/releases" target="_blank">
           <div class="icon"> <span> <i class="fa fa-download"></i></span> </div>
           <h3 class="sub-heading"> Download </h3>
           </a> </div>
       </div>
       <div class="col-md-3 col-sm-3">
-        <div class="get-started animation fadeInDown"> <a href="#">
+        <div class="get-started"> <a href="http://boxuppdocs.github.io/">
           <div class="icon"> <span> <i class="fa  fa-file-o"></i></span> </div>
           <h3 class="sub-heading"> Docs </h3>
           </a> </div>
       </div>
       <div class="col-md-3 col-sm-3">
-        <div class="get-started animation fadeInDown"> <a href="#">
+        <div class="get-started"> <a href="https://www.youtube.com/watch?v=WnV_xkFBQ24">
           <div class="icon"> <span> <i class="fa  fa-video-camera"></i></span> </div>
           <h3 class="sub-heading"> Video </h3>
           </a> </div>
       </div>
       <div class="col-md-3 col-sm-3">
-        <div class="get-started animation fadeInRight"> <a href="faq.html">
+        <div class="get-started"> <a href="faq.html">
           <div class="icon"> <span> <i class="fa fa-support"></i></span> </div>
           <h3 class="sub-heading"> Support </h3>
           </a> </div>
@@ -382,7 +545,7 @@ $(".readmore").on("click",function(){
 	
 	
     </script>
-<script src="js/jquery.ticker.js" type="text/javascript"></script>
+
 <script src="js/jquery.newsTicker.js"></script>
 
 <script> var nt_title = $('#nt-title').newsTicker({

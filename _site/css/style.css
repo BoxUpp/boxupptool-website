@@ -274,11 +274,11 @@ input[type="reset"],
   background-color: #8ebebc;
   border: 0;
   cursor: pointer;
-  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
-  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
-  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
-  background-image: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
-  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url("../images/overlay.png");
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
   -webkit-transition: background-color 0.35s ease-in-out;
   -moz-transition: background-color 0.35s ease-in-out;
   -ms-transition: background-color 0.35s ease-in-out;
@@ -308,6 +308,35 @@ input[type="reset"],
     font-size: 0.8em; }
     .item header h3 {
       font-size: 1em; }
+
+.tool-image {
+  position: relative;
+  width: 268px; }
+  .tool-image .zoom i {
+    display: none; }
+  .tool-image:hover {
+    background: url(../images/img-hover.png) no-repeat; }
+    .tool-image:hover .zoom {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -29px;
+      margin-top: -29px;
+      display: inherit !important;
+      z-index: 999999; }
+      .tool-image:hover .zoom i {
+        cursor: pointer;
+        color: #FFF;
+        margin: 15px 0 0 15px;
+        font-size: 30px;
+        display: block; }
+    .tool-image:hover img {
+      opacity: 0.5;
+      cursor: pointer; }
+      .tool-image:hover img:hover {
+        opacity: 0.5;
+        border-radius: 200px;
+        cursor: pointer; }
 
 /*********************************************************************************/
 /* Get Started                                                                  */
@@ -342,7 +371,7 @@ input[type="reset"],
       border: 1px solid;
       bottom: 0;
       content: "";
-      height: 100px;
+      height: 90px;
       left: 0;
       margin: 15px auto;
       position: absolute;
@@ -354,18 +383,18 @@ input[type="reset"],
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      width: 100px; }
+      width: 90px; }
     .get-started .icon span {
       bottom: 0;
       left: 0;
-      line-height: 134px;
+      line-height: 125px;
       margin: 0;
       position: absolute;
       right: 0;
       top: 0;
       vertical-align: middle;
       color: #405069;
-      font-size: 64px; }
+      font-size: 60px; }
   .get-started h3 {
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -594,11 +623,12 @@ input[type="reset"],
 /************ Modal  class  ***************/
 .modal-content {
   border: none;
-  padding-bottom: 10px; }
+  padding-bottom: 1px;
+  border-radius: 0px; }
 
 .modal-header {
   color: #FFF;
-  background-color: #6992d6;
+  background-color: #222629;
   padding: 5px 15px; }
   .modal-header .close {
     color: #fff;
@@ -813,10 +843,30 @@ a.accordion-toggle {
   header {
     margin-bottom: 0.4em; }
     header > p {
-      line-height: 1.2em; } }
+      line-height: 1.2em; }
+
+  .workspaces, .gitShare, .outPutConsole, .provisioning {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column; }
+
+  .order2 {
+    order: 2;
+    margin: 0px auto; }
+
+  .order1 {
+    order: 1; }
+
+  .center-feature {
+    margin: 0px auto; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .toggle {
     display: block; }
 
   body {
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+
+  .steps.second:after, .steps.first:after {
+    left: 185px;
+    top: 46%; } }
