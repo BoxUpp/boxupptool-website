@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
     text-decoration: none; }
   h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-    color: #333; }
+    color: #333;
+    font-weight: 300; }
 
 h2 {
   font-size: 2.6em;
@@ -80,7 +81,8 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  color: #c66b01; }
+  color: #094163;
+  font-weight: 400; }
 
 header {
   margin: 0 0 4em 0; }
@@ -89,8 +91,7 @@ header {
     color: rgba(255, 255, 255, 0.75); }
 
 strong, b {
-  font-weight: 300;
-  color: #666; }
+  color: #555; }
 
 em, i {
   font-style: italic; }
@@ -171,7 +172,9 @@ section {
   text-align: right; }
   #sidebar-wrapper #logo {
     position: relative;
-    margin: .4em;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    padding: 0.3em;
     text-align: center; }
     #sidebar-wrapper #logo img {
       width: 170px; }
@@ -405,18 +408,18 @@ input[type="reset"],
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   text-align: center;
   /*transition: all 300ms linear 0s;*/
-  width: 100%;
+  min-width: 145px;
   position: relative;
   /*@include vendor-prefix('transition','all 1s ease-out');*/
   cursor: pointer; }
   .get-started .icon {
     display: block;
     float: left;
-    height: 145px;
+    height: 100px;
     margin: 0 0 10px;
     position: relative;
     width: 100%; }
@@ -424,7 +427,7 @@ input[type="reset"],
       border: 1px solid;
       bottom: 0;
       content: "";
-      height: 90px;
+      height: 70px;
       left: 0;
       margin: 15px auto;
       position: absolute;
@@ -436,28 +439,29 @@ input[type="reset"],
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      width: 90px; }
+      width: 70px; }
     .get-started .icon span {
       bottom: 0;
       left: 0;
-      line-height: 125px;
+      line-height: 100px;
       margin: 0;
       position: absolute;
       right: 0;
       top: 0;
       vertical-align: middle;
       color: #405069;
-      font-size: 60px; }
+      font-size: 45px; }
       .get-started .icon span:hover i {
         color: #f7941f; }
   .get-started h3 {
     /*@include vendor-prefix('transition','all 1s ease-out');*/
-    color: #222; }
+    color: #222;
+    font-weight: 300; }
   .get-started:hover {
     background: #f3f8fd;
     /*@include vendor-prefix('transition', 'all 1s ease-out');*/
     color: #f7941f; }
-    .get-started:hover h3 {
+    .get-started:hover h3, .get-started:hover .icon span {
       color: #f7941f;
       /*@include vendor-prefix('transition', 'all 1s ease-out');*/ }
 
@@ -469,9 +473,14 @@ input[type="reset"],
 /*********************************************************************************/
 /* Steps                                                                        */
 /*********************************************************************************/
+#developers {
+  padding-bottom: 0px; }
+
 .step {
   position: relative;
   margin: 50px 0px; }
+  .step a {
+    display: inline-block; }
   .step:before {
     background: #cdcdcd;
     content: " ";
@@ -483,6 +492,7 @@ input[type="reset"],
     left: 120px; }
   .step .sub-heading {
     color: #000000;
+    font-weight: 300;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
@@ -499,6 +509,7 @@ input[type="reset"],
     transition: all 1s ease-out; }
   .step a:hover .sub-heading {
     color: #2098d1;
+    font-weight: 300;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
@@ -540,8 +551,9 @@ input[type="reset"],
 /*********************************************************************************/
 .technologies {
   text-align: left;
-  margin-top: 40px;
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  width: 61%;
+  margin: 70px auto 0px; }
   .technologies h6 {
     padding: 10px;
     font-size: 22px; }
@@ -582,6 +594,8 @@ input[type="reset"],
           float: left; }
         .technologiesLogo ul li a:hover {
           opacity: 0.8; }
+      .technologiesLogo ul li:last-child {
+        border: none; }
 
 /*********************************************************************************/
 /* Blog                                                                          */
@@ -616,6 +630,15 @@ input[type="reset"],
 /*********************************************************************************/
 /* Case Studies                                                                         */
 /*********************************************************************************/
+#casestudies li {
+  list-style: inside; }
+#casestudies h4 {
+  margin-top: 1em; }
+  #casestudies h4 strong {
+    font-weight: 600; }
+#casestudies p {
+  margin-bottom: 1em; }
+
 .case-study-img {
   float: left;
   width: 30%;
