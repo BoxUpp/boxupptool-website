@@ -20,8 +20,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/*font-size: 100%;
+	font: inherit;*/
 	/*vertical-align: baseline;*/
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -61,10 +61,10 @@ body.is-loading * {
 }
 body, input, textarea, select {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 14pt;
+	font-size: 13pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #383737;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 2.3em;
+	font-size: 2.6em;
 	letter-spacing: -1px; 	
 	text-align:center;
 	&.alt {
@@ -95,10 +95,11 @@ h2 {
 h3
 	{
 		font-size: 1.5em;
+		color:#c66b01;
 	}
 header
 	{
-		margin: 0 0 2em 0;
+		margin: 0 0 4em 0;
 		
 		> p
 		{
@@ -120,8 +121,8 @@ em, i
 a
 	{
 		text-decoration: none;
-		color: #0a4264;
-		@include vendor-prefix('transition', 'color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out');		
+		color: #129cd8;
+		/*@include vendor-prefix('transition', 'color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out');		*/
 		outline: 0;
 		
 		&:hover
@@ -151,6 +152,12 @@ a
 	background-position: center;
 	background-size: cover;
 	vertical-align: middle;
+	padding:8em 0em 4em;
+	font-size:1.1em;
+	
+	>div{height:100%;
+		#nt-title-container	{bottom:0px; position:absolute; text-align:center; width:100%}
+	}
 	
 }
 /*********************************************************************************/
@@ -168,16 +175,18 @@ section
 						
 			&.two
 			{
-				background-color: #f5fafa;
+				background-color: #fff;
+				padding: 4em 25px;
 			}
 			&.three
 			{
-				background-color: #ecf1f1;
+				background-color: #f5fafa;
+				padding: 4em 25px;
 			}
-			&.four
+			/*&.four
 			{
 				background-color: #e8edec;
-			}
+			}*/
 			
 			.row{margin:auto;}
 		}
@@ -185,15 +194,17 @@ section
 /* Aside                                                                          */
 /*********************************************************************************/
 #sidebar-wrapper{
-	background: #222629;
+	background: #3f4346;
 	box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.1);
 	text-align: right; 
 	
 	#logo
 	{
 		position: relative;
-		margin:.5em;
-		text-align:center		
+		margin:.4em;
+		text-align:center;
+		
+		img{width:170px;}		
 		
 	}
 	
@@ -214,7 +225,7 @@ section
 					display:inline-block;
 				a
 				{
-					color: #41484c;
+					color: #6f6f6f;
 					@include vendor-prefix('transition','color 0.35s ease-in-out');
 					@include vendor-prefix('transition', 'color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out');	
 					display: inline-block;
@@ -261,20 +272,20 @@ section
 					outline: 0;
 					border: 0;
 					@include vendor-prefix('transition','none');
-					font-size:0.8em;
+					font-size:0.9em;
 					
 					span
 					{
 						position: relative;
 						display: block;
-						font-size: 0.8em;
-						line-height: 2.8em;
+						font-size: 1em;
+						line-height:2em;
 						
 						&:before
 						{
 							position: absolute;
 							left: 0;
-							color: #41484c;
+							color: rgba(255, 255, 255, 0.5);
 							text-align: center;
 							
 						}
@@ -286,6 +297,7 @@ section
 						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
 						color: #fff;
 					}
+					&:focus{background:none;}
 				}
 				
 				&.active,&:hover	
@@ -313,17 +325,22 @@ section
 #nt-title {
 	margin-top:60px;
 	padding-left:0px;
+	
 	li {
 		white-space: nowrap;
 		list-style: none;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-weight:300;
+		color:rgba(255, 255, 255, 0.5);
+		line-height:1.8em;
 		a{
-		color:#fff;
+			color:#fff;		
+			&:hover{color:#f7941f;}	
 		}
 	}
 }
+
 
 /*********************************************************************************/
 /* Button                                                                         */
@@ -335,11 +352,11 @@ section
 		{
 			position: relative;
 			display: inline-block;
-			border-radius: 0.35em;
-			color: #fff !important;
+			border-radius:4px;
+			color: #fff;
 			text-decoration: none;
-			padding: 0.75em 2.5em 0.75em 2.5em;
-			background-color: #8ebebc;
+			padding: 0.5em 2.5em;
+			background-color: #3f4346;
 			border: 0;
 			cursor: pointer;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15));
@@ -347,17 +364,52 @@ section
 			background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15));
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15));
 			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15));			
-			@include vendor-prefix('transition','background-color 0.35s ease-in-out');
+			/*@include vendor-prefix('transition','background-color 0.35s ease-in-out');*/
 			
 			&:hover
 			{
-				background-color: #9ececc;
+				background-color: #f6931e;
 			}
 			&:active
 			{
 				background-color: #7eaeac;
 			}
+			
+			&.download{ 
+				background:none; border:2px solid #e68d23;							
+				background-color: transparent;
+				border-color: #c7e7dc;				
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+				padding-right:2em;
+				font-size: 22px;
+				font-weight:400;
+				
+				
+				&:before{
+					/*border-right: 2px solid #e68d23;*/
+					  color: #fff;
+					  content: "\f019";
+					  display: block;
+					  font-family: FontAwesome;
+					  font-size: 22px;
+					  font-style: normal;
+					  font-weight: normal;
+					  left: 0.1em;
+					  line-height: 2.8em;
+					  position: absolute;
+					  top: 0;
+					  width: 2.5em;
+					}
+				&:hover{
+					background:#fff; color:#001e30 !important;
+					&:before{color:#001e30 !important}
+				 }
+			
+			}
 		}
+		
+
+		
 		
 /*********************************************************************************/
 /* Quick Overview                                                                         */
@@ -377,6 +429,7 @@ section
 				h3
 				{
 					font-size: 1em;
+					
 				}
 			}
 	}	
@@ -420,6 +473,7 @@ section
 	}	
 }
 
+ .workspaces, .gitShare, .outPutConsole, .provisioning{margin-bottom:2em !important}
 /*********************************************************************************/
 /* Get Started                                                                  */
 /*********************************************************************************/
@@ -434,10 +488,10 @@ section
     padding: 30px;
     position: relative;
     text-align: center;
-    transition: all 300ms linear 0s;
+    /*transition: all 300ms linear 0s;*/
     width: 100%;
 	position:relative;
-	@include vendor-prefix('transition','all 1s ease-out');
+	/*@include vendor-prefix('transition','all 1s ease-out');*/
 	cursor:pointer;
 	
 	.icon { 
@@ -474,19 +528,22 @@ section
 			vertical-align: middle;
 			color:#405069; 
 			font-size:60px;  
+			
+			&:hover i{color:#f7941f;}
 		}
 	}
 	h3{
-		@include vendor-prefix('transition','all 1s ease-out');
+		/*@include vendor-prefix('transition','all 1s ease-out');*/
+		color:#222;
 	}
 	&:hover{
 		background:#f3f8fd;
-		@include vendor-prefix('transition', 'all 1s ease-out');
+		/*@include vendor-prefix('transition', 'all 1s ease-out');*/
 		color:#f7941f;
 		
 		h3{
 			color:#f7941f;
-			@include vendor-prefix('transition', 'all 1s ease-out');
+			/*@include vendor-prefix('transition', 'all 1s ease-out');*/
 			}
 	 }
 }
@@ -562,7 +619,7 @@ section
 	height: 22px;
 	left: 215px;
 	position: absolute;
-	top: 47%;
+	top: 45%;
 	width: 26px;
 }
 
@@ -576,6 +633,7 @@ section
 	
 	h6 {
 		padding:10px;
+		font-size:22px;
 		
 		span {
 			font-weight:400
@@ -705,7 +763,7 @@ section
 
 
 .show-contnet {
-	max-height: 330px;
+	max-height: 312px;
 	overflow-y: hidden;
 	@include vendor-prefix('transition', 'all 4s ease-out');
 }
@@ -964,13 +1022,15 @@ a.accordion-toggle {
 	#contact input[type="submit"]{margin-top:20px;}
 	#nav{max-height:200px; overflow-y:scroll}
 	
-	.intro{padding:0.8em 0px;}
+	.intro{padding:0.8em 0px;
+	
+	}
 	h2{font-size:1.8em; line-height:1.2em}
 	header{ 
 			margin-bottom:0.4em;
 			> p{line-height:1.2em}
 		}
-	 .workspaces, .gitShare, .outPutConsole, .provisioning, {
+	 .workspaces, .gitShare, .outPutConsole, .provisioning {
 	 	display: -webkit-flex; /* Safari */
 		display: flex;
 		flex-direction:column
