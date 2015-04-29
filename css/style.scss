@@ -440,12 +440,14 @@ section
 
 .tool-image {
 	position: relative;
-	width: 268px;
+	max-width:100%;
 	
 	.zoom i{display:none}
 	
 	&:hover{
 		background: url(../images/img-hover.png) no-repeat;
+		background-size:100%;
+		
 		.zoom {
 			position: absolute;
 			top: 50%;
@@ -689,7 +691,7 @@ section
 				&:hover{opacity:0.8}
 			}
 			
-			&:last-child{border:none;}
+			&:last-child{border:none; padding-right:0px;}
 		}
 	}
 }
@@ -707,7 +709,7 @@ section
 	text-align:left;
 	
 	 p {
-	  font-size: 16px;
+	 
 	  line-height: 1.6em;
 	  margin: 0 0 3px;
 	  padding: 0;
@@ -729,7 +731,7 @@ section
 		&:hover{color:#f7941f}
 	}
 	.post-desc {
-		color: #999
+		color: #383737;
 	}
 }
 /*********************************************************************************/
@@ -1060,6 +1062,18 @@ a.accordion-toggle {
 		.order2{order:2; margin:0px auto}
 		.order1{order:1}
 		.center-feature{margin:0px auto}
+		
+		.technologies{
+			width:100%;
+			h6{font-size:20px;}
+		}
+		.technologiesLogo ul li{
+			display:block; text-align:center; border-bottom:1px solid #e1e1e1;
+			
+			&:last-child{border-bottom:0px;}
+		}
+		.intro > div #nt-title-container{position:static}
+		#nt-title li{white-space:normal; line-height:1.1em; height:58px;}
 	}
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -1067,8 +1081,18 @@ a.accordion-toggle {
 	body{overflow-x:hidden}
 	
 	.steps.second:after, .steps.first:after {
-		left: 185px;
-		top: 46%;
+		left: 180px;
+		top: 44%;
 	}
+	.technologies{width:90%}
+	.intro > div #nt-title-container{position:static}
 
 }
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.steps.second:after, .steps.first:after {
+		left: 180px;
+		top: 44%;
+	}
+	.technologies{width:100%}
+	}

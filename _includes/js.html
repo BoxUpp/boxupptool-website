@@ -3,12 +3,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+   
+    <!-- Page smoothly slide on click of nav -->
 	<script src="js/scrolling-nav.js"></script> 
 	<script src="js/jquery.easing.min.js"></script> 
+    
+    
     <!-- Menu Toggle Script -->
     <script>
 	var innerheight = $(window).innerHeight();
-	
 	
 	
     $("#menu-toggle").click(function(e) {
@@ -17,8 +20,7 @@
     });
 	
 	if ($(window).width() >= 650 && $(window).width() <= 768 )
-		{
-			
+		{			
 			$("#wrapper").addClass('toggled');
 			
 			$("#page-content-wrapper").click(function () {
@@ -34,14 +36,15 @@
 			})
 			
 			
+			
 			}
 
 		 $('#page-content-wrapper').onmousewheel = function() {
 			//console.log("scrolling");
-			alert("Hello");
+			//alert("Hello");
 		  };
 		function toggleside() {
-			alert("Hello");
+			//alert("Hello");
 		}
 		
 if ($(window).width() > 768 ){$("#top").css('height',innerheight);}		
@@ -60,11 +63,11 @@ $(".readmore").on("click",function(){
     </script>
 
 <script src="js/jquery.newsTicker.js"></script>
-
-<script> var nt_title = $('#nt-title').newsTicker({
-                row_height: 40,
-                max_rows: 1,
-                duration: 3000,
-                pauseOnHover: 0
-            });
-			</script>
+<script> 
+	var nt_title = $('#nt-title').newsTicker({
+    	row_height: 40,
+        max_rows: 1,
+        duration: 3000,
+        pauseOnHover: 1
+   });
+</script>

@@ -368,11 +368,12 @@ input[type="reset"],
 
 .tool-image {
   position: relative;
-  width: 268px; }
+  max-width: 100%; }
   .tool-image .zoom i {
     display: none; }
   .tool-image:hover {
-    background: url(../images/img-hover.png) no-repeat; }
+    background: url(../images/img-hover.png) no-repeat;
+    background-size: 100%; }
     .tool-image:hover .zoom {
       position: absolute;
       top: 50%;
@@ -595,7 +596,8 @@ input[type="reset"],
         .technologiesLogo ul li a:hover {
           opacity: 0.8; }
       .technologiesLogo ul li:last-child {
-        border: none; }
+        border: none;
+        padding-right: 0px; }
 
 /*********************************************************************************/
 /* Blog                                                                          */
@@ -606,7 +608,6 @@ input[type="reset"],
   margin-bottom: 10px;
   text-align: left; }
   .latest-blog p {
-    font-size: 16px;
     line-height: 1.6em;
     margin: 0 0 3px;
     padding: 0; }
@@ -625,7 +626,7 @@ input[type="reset"],
     .latest-blog a:hover {
       color: #f7941f; }
   .latest-blog .post-desc {
-    color: #999; }
+    color: #383737; }
 
 /*********************************************************************************/
 /* Case Studies                                                                         */
@@ -927,7 +928,27 @@ a.accordion-toggle {
     order: 1; }
 
   .center-feature {
-    margin: 0px auto; } }
+    margin: 0px auto; }
+
+  .technologies {
+    width: 100%; }
+    .technologies h6 {
+      font-size: 20px; }
+
+  .technologiesLogo ul li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1; }
+    .technologiesLogo ul li:last-child {
+      border-bottom: 0px; }
+
+  .intro > div #nt-title-container {
+    position: static; }
+
+  #nt-title li {
+    white-space: normal;
+    line-height: 1.1em;
+    height: 58px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .toggle {
     display: block; }
@@ -936,5 +957,18 @@ a.accordion-toggle {
     overflow-x: hidden; }
 
   .steps.second:after, .steps.first:after {
-    left: 185px;
-    top: 46%; } }
+    left: 180px;
+    top: 44%; }
+
+  .technologies {
+    width: 90%; }
+
+  .intro > div #nt-title-container {
+    position: static; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .steps.second:after, .steps.first:after {
+    left: 180px;
+    top: 44%; }
+
+  .technologies {
+    width: 100%; } }
