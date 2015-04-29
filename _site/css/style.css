@@ -608,6 +608,7 @@ input[type="reset"],
   margin-bottom: 10px;
   text-align: left; }
   .latest-blog p {
+    font-size: 16px;
     line-height: 1.6em;
     margin: 0 0 3px;
     padding: 0; }
