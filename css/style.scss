@@ -133,7 +133,7 @@ a
 			border-bottom-color: rgba(255,255,255,0);
 			text-decoration:none;
 		}
-		&:focus{outline:none}
+		&:focus{outline:none; text-decoration:none}
 	}
 
 
@@ -407,6 +407,9 @@ section
 				&:hover{
 					background:#fff; color:#001e30 !important;
 					&:before{color:#001e30 !important}
+				 }
+				 &:focus{
+					 color:#fff;
 				 }
 			
 			}

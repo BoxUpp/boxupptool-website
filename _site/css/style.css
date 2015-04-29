@@ -106,7 +106,8 @@ a {
     border-bottom-color: rgba(255, 255, 255, 0);
     text-decoration: none; }
   a:focus {
-    outline: none; }
+    outline: none;
+    text-decoration: none; }
 
 .pad0 {
   padding: 0px; }
@@ -351,6 +352,11 @@ input[type="reset"],
       input[type="reset"].download:hover:before,
       .button.download:hover:before {
         color: #001e30 !important; }
+    input[type="button"].download:focus,
+    input[type="submit"].download:focus,
+    input[type="reset"].download:focus,
+    .button.download:focus {
+      color: #fff; }
 
 /*********************************************************************************/
 /* Quick Overview                                                                         */
