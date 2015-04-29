@@ -91,7 +91,9 @@ h2 {
 		strong {
  			color: #666;
 		}
+		
 	}
+	p{font-size:0.6em}
 }
 h3
 	{
@@ -373,6 +375,7 @@ section
 			&:hover
 			{
 				background-color: #f6931e;
+				color:#fff;
 			}
 			&:active
 			{
@@ -416,7 +419,17 @@ section
 		}
 		
 
+	.download-out{
+		font-size: 1.3em;
+		margin-top: 15px;
+		padding: 0.5em 1em;
 		
+		i{margin-right:10px;}
+		
+		&:focus{
+					 color:#fff;
+				 }
+	}	
 		
 /*********************************************************************************/
 /* Quick Overview                                                                         */
@@ -1025,6 +1038,63 @@ a.accordion-toggle {
 	border: 0px
 }
 
+/*********************************************************************************/
+/* Online Linter                                                                  */
+/*********************************************************************************/
+
+.validationAssistant{
+	border:1px solid #ccc;
+	box-shadow:0 0 3px #ededed;	
+	margin-bottom:15px;
+	position:relative;
+	
+	.heading{background:#222629; padding:5px 10px; color:#fff; font-size:1.1em; min-height:70px;}
+	
+	div.desc{padding:10px; min-height:280px;}
+	.btn-position{position:absolute; bottom:10px; text-align:center; width:100% }
+	ul.list-display
+		{ 
+		margin-bottom:10px;
+	
+			li{
+					font-size:0.9em;
+					position:relative;
+					padding-left:1.5em;
+					
+					&:before{
+						content:'\f046'; 
+						font-family: FontAwesome; 
+						font-size:1em;
+						position:absolute;
+						left:0px;
+						color:#094163;
+						top:2px;
+					}
+				
+			}
+		}
+	
+}
+
+
+.validatorErrorMsg {
+	background: red !important;
+	padding: 5px 5px !important;
+	border-radius: 5px;
+	color:#fff;
+
+}
+.validatorOutputMsg{
+	background: #8CF18C !important;
+	padding: 5px 5px !important;
+	border-radius: 5px;
+}
+#uploadButten.disable{
+	pointer-events:none;
+}
+#uploadButten.enable{
+	pointer-events:auto;
+}
 
 /******************************************************************************************
 					MEDIA QUERY LAYOUT STRUCTURE

@@ -78,6 +78,8 @@ h2 {
     color: rgba(255, 255, 255, 0.75); }
     h2.alt strong {
       color: #666; }
+  h2 p {
+    font-size: 0.6em; }
 
 h3 {
   font-size: 1.5em;
@@ -306,7 +308,8 @@ input[type="reset"],
   input[type="submit"]:hover,
   input[type="reset"]:hover,
   .button:hover {
-    background-color: #f6931e; }
+    background-color: #f6931e;
+    color: #fff; }
   input[type="button"]:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
@@ -357,6 +360,15 @@ input[type="reset"],
     input[type="reset"].download:focus,
     .button.download:focus {
       color: #fff; }
+
+.download-out {
+  font-size: 1.3em;
+  margin-top: 15px;
+  padding: 0.5em 1em; }
+  .download-out i {
+    margin-right: 10px; }
+  .download-out:focus {
+    color: #fff; }
 
 /*********************************************************************************/
 /* Quick Overview                                                                         */
@@ -875,6 +887,60 @@ a.accordion-toggle {
 .support .panel {
   /*width:46%; float:left; margin:0px 2% !important;*/
   border: 0px; }
+
+/*********************************************************************************/
+/* Online Linter                                                                  */
+/*********************************************************************************/
+.validationAssistant {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #ededed;
+  margin-bottom: 15px;
+  position: relative; }
+  .validationAssistant .heading {
+    background: #222629;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1.1em;
+    min-height: 70px; }
+  .validationAssistant div.desc {
+    padding: 10px;
+    min-height: 280px; }
+  .validationAssistant .btn-position {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%; }
+  .validationAssistant ul.list-display {
+    margin-bottom: 10px; }
+    .validationAssistant ul.list-display li {
+      font-size: 0.9em;
+      position: relative;
+      padding-left: 1.5em; }
+      .validationAssistant ul.list-display li:before {
+        content: '\f046';
+        font-family: FontAwesome;
+        font-size: 1em;
+        position: absolute;
+        left: 0px;
+        color: #094163;
+        top: 2px; }
+
+.validatorErrorMsg {
+  background: red !important;
+  padding: 5px 5px !important;
+  border-radius: 5px;
+  color: #fff; }
+
+.validatorOutputMsg {
+  background: #8CF18C !important;
+  padding: 5px 5px !important;
+  border-radius: 5px; }
+
+#uploadButten.disable {
+  pointer-events: none; }
+
+#uploadButten.enable {
+  pointer-events: auto; }
 
 /******************************************************************************************
 					MEDIA QUERY LAYOUT STRUCTURE
