@@ -26,14 +26,14 @@ nav:
 - page: Features
   permalink: "#overview"
   id: overview-link
-  icon: fa-umbrella
+  icon: fa-star
   linktype: 1
   title: Home
   
 - page: Get Started
   permalink: "#started"
   id: started-link
-  icon: fa-clock-o
+  icon: fa-paper-plane
   linktype: 1
   title: Home
   
@@ -47,7 +47,7 @@ nav:
 - page: Blog
   permalink: "#blog"
   id: blog-link
-  icon: fa-picture-o
+  icon: fa-rss
   linktype: 1
   title: Home
   

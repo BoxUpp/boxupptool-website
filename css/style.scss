@@ -268,6 +268,7 @@ section
 			li
 			{
 				list-style:none;
+				&.first-link{display:none;}
 				
 				a
 				{
@@ -1096,6 +1097,55 @@ a.accordion-toggle {
 	pointer-events:auto;
 }
 
+/*********************************************************************************/
+/* Back To Top                                                                */
+/*********************************************************************************/
+.cd-top {
+ 	display: inline-block;
+  	height: 40px;
+  	width: 40px;
+  	position: fixed;
+  	bottom: 40px;
+  	right: 10px;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  	/* image replacement properties */
+  	overflow: hidden; 
+  	white-space: nowrap;
+  	background: rgba(0, 0, 0, 0.8);
+  	line-height:1.9em;
+	font-size: 22px;
+	color:#fff;
+  	visibility: hidden;
+  	opacity: 0;	
+  	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+  	transition: opacity .3s 0s, visibility 0s .3s;
+	
+	&.cd-is-visible, &.cd-fade-out, .no-touch .cd-top:hover{
+		-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  		-moz-transition: opacity .3s 0s, visibility 0s 0s;
+  		transition: opacity .3s 0s, visibility 0s 0s;
+	}
+	
+	&.cd-is-visible{
+		/* the button becomes visible */
+		visibility: visible;
+  		opacity: 1;
+	}
+	
+	&.cd-fade-out {
+  		/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  		opacity: .5;
+	}
+	.no-touch{
+		.cd-top:hover {
+  			background-color: #e86256;
+  			opacity: 1;
+		}
+	}
+	
+}
+
 /******************************************************************************************
 					MEDIA QUERY LAYOUT STRUCTURE
 				
@@ -1169,3 +1219,24 @@ a.accordion-toggle {
 	}
 	.technologies{width:100%}
 	}
+	
+
+	
+/*********************************************************************************/
+/* Back To Top                                                                */
+/*********************************************************************************/	
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+	line-height:2.2em;
+  }
+}

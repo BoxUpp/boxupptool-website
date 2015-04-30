@@ -8,7 +8,7 @@
   <nav id="nav">
     <ul class="nav">
       {% for node in site.nav %}
-      <li class="{% if node.permalink == page.path  %} active {% endif %}" ><a href="{% if page.title != "Home" %}{% if node.linktype == 1 %}index.html{{ node.permalink }}{% else %}{{ node.permalink }}{% endif %}{% else %}{{ node.permalink }}{% endif %}" class="page-scroll"  ><span class="fa {{ node.icon }}"></span>{{  node.page }}</a></li>
+      <li class="{% if node.permalink == page.path  %} active {% endif %} {% if forloop.first and  page.title == "Home" %}first-link{% endif %}" ><a href="{% if page.title != "Home" %}{% if node.linktype == 1 %}index.html{{ node.permalink }}{% else %}{{ node.permalink }}{% endif %}{% else %}{{ node.permalink }}{% endif %}" class="page-scroll"  ><span class="fa {{ node.icon }}"></span>{{  node.page }}</a></li>
       {% endfor %}
     </ul>
   </nav>
